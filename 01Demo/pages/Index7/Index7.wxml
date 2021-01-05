@@ -1,0 +1,73 @@
+<!--pages/Index7/Index7.wxml-->
+
+<text class="" selectable="ture" space="false" decode="false">
+    gegzgdhewhrehhb&nbsp;123
+</text>
+<image class="" src="https://ae01.alicdn.com/kf/Hd266a8f9cff14bee90632523c8160509K.jpg" mode="aspectFit"/>
+
+<swiper>
+    <swiper-item >
+        <image class="" src="https://ae01.alicdn.com/kf/Hd266a8f9cff14bee90632523c8160509K.jpg"/>
+    </swiper-item>
+    <swiper-item >
+        <image class="" src="https://ae01.alicdn.com/kf/H094039c697764a4e8d9b34ed3c768b61j.jpg"/>
+    </swiper-item>
+</swiper>
+  
+<navigator url="/pages/Index6/Index6" hover-class="navigator-hover" open-type="navigate">
+    轮播图
+</navigator>
+<rich-text class="" nodes="{{html}}">
+    
+</rich-text>
+<button>默认按钮</button>
+<button size="mini">默认按钮</button>
+<button size="mini" type="primary">默认按钮</button>
+<button size="mini" type="primary" plain>默认按钮</button>
+
+<!-- 
+contact	打开客服会话，如果用户在会话中点击消息卡片后返回小程序，可以从 bindcontact 回调中获得具体信息，具体说明	1.1.0
+share	触发用户转发，使用前建议先阅读使用指引	1.2.0
+getPhoneNumber	获取用户手机号，可以从bindgetphonenumber回调中获取到用户信息，具体说明	1.2.0
+getUserInfo	获取用户信息，可以从bindgetuserinfo回调中获取到用户信息	1.3.0
+launchApp	打开APP，可以通过app-parameter属性设定向APP传的参数具体说明	1.9.5
+openSetting	打开授权设置页	2.0.7
+feedback	打开“意见反馈”页面，用户可提交反馈内容并上传日志，开发者可以登录小程序管理后台后进入左侧菜单“客服反馈”页面获取到反馈内容
+-->
+<button open-type="contact">contact</button>
+<button open-type="share">share</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">getPhoneNumber</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">getUserInfo</button>
+<button open-type="launchApp">launchApp</button>
+<button open-type="openSetting">openSetting</button>
+<button open-type="feedback">feedback</button>
+
+
+<icon type="success" size="23" color="">
+</icon>
+<icon type="info" size="33" color="green">
+    
+</icon>
+<radio-group bindchange="handleChange">
+    <radio class="" value="男" >
+        
+    </radio>
+    <radio class="" value="女">
+        
+    </radio>
+</radio-group>
+  <view>
+      {{msg}}
+  </view>
+<view>
+    <checkbox-group bindchange="checkChange">
+    <checkbox value="{{item.value}}" wx:for="{{list}}" wx:key="id">
+        {{item.name}}
+    </checkbox>
+      
+    </checkbox-group>
+        
+</view>
+  
+  
+    

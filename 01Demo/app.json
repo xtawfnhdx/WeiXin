@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/Index8/Index8",
+    "pages/Index7/Index7",
+    "pages/Index6/Index6",
+    "pages/Index5/Index5",
+    "pages/Index4/Index4",
+    "pages/Index3/Index3",
+    "pages/Index2/Index2",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "测试页面",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/Index2/Index2",
+      "text": "Index2"
+    },{
+      "pagePath": "pages/index/index",
+      "text": "index"
+    }]
+  }
+}

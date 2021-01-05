@@ -1,0 +1,28 @@
+<view>hello world</view>
+<view>pageName:{{pageName}}</view>
+<view>pageIndex:{{pageIndex}}</view>
+<view>pageCheck:{{pageCheck}}</view>
+<view >Person.Name:{{Person.name}},Person.age:{{Person.age}}</view>
+<view><checkbox  checked="{{pageCheck}}"/></view>
+<view wx:for="{{Person}}" wx:key="ii">
+    <view >{{index}}:{{item}}</view>
+</view>
+<view wx:for="{{arrays}}" wx:key="iii">
+    <view >{{index}}:{{item}}</view>
+</view>
+
+<view wx:for="{{arrays}}" wx:key="iii" wx:for-index="ss" wx:for-item="kk">
+    <view >{{ss}}:{{kk}}</view>
+</view>
+<block wx:for="{{arrays}}" wx:key="iiis" wx:for-index="ss" wx:for-item="kk">
+<view >{{ss}}:{{kk}}</view>
+</block>
+
+
+<view class="box1"></view>
+<view class="box2"></view>
+
+<view class="lg_gox">aaaaa</view>
+<view>
+    <myHead>123</myHead>
+</view>

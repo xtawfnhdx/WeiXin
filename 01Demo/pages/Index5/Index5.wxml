@@ -1,0 +1,9 @@
+<input id="input" type="text" bindinput="handleInput" />
+<input id="output" type="text" bindinput="handleInput" />
+<button class="btn" type="primary" loading="{{loading}}" disabled="{{disabled}}" bindtap="onTap" data-operation="{{1}}">
+    +
+</button>
+<button class="btn" type="primary" loading="{{loading}}" bindtap="onTap" data-operation="{{-1}}">
+    -
+</button>
+<view>{{num}}</view>

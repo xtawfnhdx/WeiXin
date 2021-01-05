@@ -1,0 +1,6 @@
+.lg_gox{
+  width:600rpx;
+  height: 550rpx;
+  background-color: brown;
+  color: aquamarine;
+}

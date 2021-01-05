@@ -1,0 +1,10 @@
+view {
+  color: aqua;
+  font-size: 100px;
+}
+text {
+  color: yellow;
+}
+view {
+  color: yellow;
+}

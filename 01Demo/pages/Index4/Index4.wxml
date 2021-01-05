@@ -1,0 +1,66 @@
+<!-- pages/Index4/Index4.wxml -->
+<text>pages/Index4/Index4.wxml</text>
+<!-- 这是一个注释 -->
+<text>1</text>
+<text>2</text>
+<view>21</view>
+<view>33</view>
+<view>{{pageName}}</view>
+<view>{{person.name}}</view>
+<view>{{person.age}}</view>
+<view data-num="{{person.age}}">自定义属性</view>
+<view>
+  <checkbox checked="{{ischeck}}"></checkbox>
+</view>
+<view>-------------------运算-------------------</view>
+<view>{{1+2}}</view>
+<view>{{10%2===0?"偶数":"基数"}}</view>
+<view wx:for="{{list}}" wx:fo r-item="item" wx:for-index="index" wx:key="id">
+  ID：{{index}}
+  value:{{item.name}}
+</view>
+<view wx:for="{{list2}}" wx:key="list2" wx:for-index="index" wx:for-item="value">
+  外层ID:{{index}}
+  外层key:{{value.id}}
+  外层value:{{value.thisValue}}
+  <view wx:for="{{value.id}}" wx:key="in-list2" wx:for-index="in-kye" wx:for-item="in-value">
+    内层ID：{{in-kye}},内层value：{{in-value.keys}}
+  </view>
+</view>
+
+<view>-------------------block-------------------</view>
+<block wx:for="{{list}}" wx:fo r-item="item" wx:for-index="index" wx:key="id" class="my-list">
+  ID：{{index}}
+  value:{{item.name}}
+</block>
+<view>-------------------if-------------------</view>
+<view wx:if="{{true}}">
+  显示出来了
+</view>
+<view wx:if="{{ischeck}}">
+  是否显示
+</view>
+  <view wx:if="{{false}}">
+    1
+  </view>
+  <view wx:elif="{{false}}">
+    2
+  </view>
+  <view wx:else="{{true}}">
+    3
+  </view>
+  <view>-------------------hidden-------------------</view>
+  <view hidden>
+    有hidden
+  </view>
+  <view hidden="{{fasle}}">
+    false  
+  </view>
+  <view hidden="{{true}}">
+    true
+  </view>
+    
+    
+    
+    
+  

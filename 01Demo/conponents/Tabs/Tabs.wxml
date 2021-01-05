@@ -1,0 +1,13 @@
+<view class="tabs">
+    <view class="tabs_title">
+        <!-- <view class="tabl_item active">首页</view>
+        <view class="tabl_item">原创</view>
+        <view class="tabl_item">分类</view> -->
+        <view wx:for="{{tabs}}" wx:key="id" class="tabl_item {{item.isActive?'active':''}}"
+        bindtap="hanldeItemTab"
+        data-index="{{index}}">{{item.name}}</view>
+    </view>
+    <view class="tabs_content">
+    <slot></slot>
+    </view>
+</view>
